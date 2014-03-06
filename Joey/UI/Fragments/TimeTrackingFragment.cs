@@ -47,7 +47,7 @@ namespace Toggl.Joey.UI.Fragments
             var lp = new ActionBar.LayoutParams (ActionBar.LayoutParams.WrapContent, ActionBar.LayoutParams.WrapContent);
             lp.Gravity = (int)(GravityFlags.Right | GravityFlags.CenterVertical);
 
-            var actionBar = ((BaseActivity) Activity).ActionBar;
+            var actionBar = ((BaseActivity)Activity).ActionBar;
             actionBar.SetCustomView (timerSection.Root, lp);
             actionBar.SetDisplayShowCustomEnabled (true);
 
@@ -83,11 +83,6 @@ namespace Toggl.Joey.UI.Fragments
 
             // Trigger a partial sync, if the sync from OnCreate is still running, it does nothing
             ServiceContainer.Resolve<SyncManager> ().Run (SyncMode.Auto);
-        }
-
-        public override void OnDestroyView ()
-        {
-            base.OnDestroyView ();
         }
 
         public override void OnDestroy ()
@@ -181,11 +176,6 @@ namespace Toggl.Joey.UI.Fragments
                 default:
                     throw new InvalidOperationException ("Unknown tab position");
                 }
-            }
-
-            public override Java.Lang.Object InstantiateItem (ViewGroup container, int position)
-            {
-                return base.InstantiateItem (container, position);
             }
 
             public override Fragment GetItem (int position)

@@ -6,6 +6,7 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
+using Android.Support.V4.App;
 using Android.Support.V4.Widget;
 using Android.Views;
 using Android.Widget;
@@ -14,7 +15,6 @@ using XPlatUtils;
 using Toggl.Joey.UI.Adapters;
 using Toggl.Joey.UI.Fragments;
 using Fragment = Android.Support.V4.App.Fragment;
-using Android.Support.V4.App;
 
 namespace Toggl.Joey.UI.Activities
 {

@@ -275,6 +275,7 @@
     <AndroidResource Include="Resources\drawable-xhdpi\IcDrawer.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\DrawerShadow.9.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\IcDrawer.png" />
+    <AndroidResource Include="Resources\layout\RecentTimeEntriesListFragment.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
